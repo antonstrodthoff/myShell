@@ -1,0 +1,57 @@
+theme = "custom"
+client_id = "b4c74cd4cf0841cea35064ee595027bb"
+client_secret = "478ee5ff82b14d10847c19d0ec3a1926"
+client_port = 8080
+login_redirect_uri = "http://127.0.0.1:8080/login"
+playback_format = """
+{status}
+
+{track}
+{artists}
+{album}
+{progress_bar}
+
+{metadata}"""
+# {status} {track} • {artists}
+notify_timeout_in_secs = 0
+tracks_playback_limit = 50
+app_refresh_duration_in_ms = 32
+playback_refresh_duration_in_ms = 0
+page_size_in_rows = 20
+play_icon = "⏸"
+pause_icon = "▶" #"▌▌"
+liked_icon = "♥"
+border_type = "Rounded" # Hidden, Plain, Rounded, Double, Thick
+progress_bar_type = "Rectangle" # Line, Rectangle
+cover_img_length = 17
+cover_img_width = 8
+cover_img_scale = 1.0
+enable_media_control = false
+enable_streaming = "Always"
+enable_notify = true
+enable_cover_image_cache = true
+default_device = "spotify-player"
+notify_streaming_only = false
+seek_duration_secs = 20
+sort_artist_albums_by_type = false
+
+[notify_format]
+summary = "{track} • {artists}"
+body = "{album}"
+
+[layout]
+playback_window_position = "Top" # Top, Bottom
+playback_window_height = 10 # 6
+
+[layout.library]
+playlist_percent = 40
+album_percent = 40
+
+[device]
+name = "spotify-player"
+device_type = "speaker"
+volume = 100
+bitrate = 320
+audio_cache = true
+normalization = true
+autoplay = true
